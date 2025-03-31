@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/RNN_Tutorial.jpg') no-repeat center center/cover;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.quadrant {
+    padding: 40px;
+    min-height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.quadrant:hover {
+    transform: scale(1.07);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+#important-urgent {
+    background: linear-gradient(135deg, rgba(255, 102, 102, 0.5), rgba(255, 51, 51, 0.3));
+}
+
+#important-not-urgent {
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.5), rgba(255, 140, 0, 0.3));
+}
+
+#not-important-urgent {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.5), rgba(0, 128, 255, 0.3));
+}
+
+#not-important-not-urgent {
+    background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(34, 139, 34, 0.3));
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-list li {
+    background: #ffffff;
+    color: #333;
+    padding: 14px;
+    margin: 6px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-input {
+    width: 75%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.task-input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.add-task {
+    padding: 14px 20px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-task:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+.delete-task {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.delete-task:hover {
+    background: #b71c1c;
+    transform: scale(1.05);
+}
